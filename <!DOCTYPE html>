@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>charity: water – Drop Saver</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="assets/logo.png" alt="charity: water logo" id="logo">
+    <h1>Drop Saver</h1>
+    <div id="scoreWrap">💧 Saved: <span id="score">0</span></div>
+  </header>
+
+  <main id="gameArea">
+    <!-- Drop and obstacle elements will be added dynamically -->
+  </main>
+
+  <nav id="controls">
+    <button id="resetBtn">Reset</button>
+  </nav>
+
+  <canvas id="celebration" class="hide"></canvas>
+
+  <!-- Confetti (optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

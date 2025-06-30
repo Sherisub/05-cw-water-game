@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>charity: water – Drop Saver</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font for branding -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="img/cw_logo_horizontal.png" alt="charity: water logo" id="logo">
+    <h1>Drop Saver</h1>
+    <div id="scoreWrap">💧 Saved: <span id="score">0</span></div>
+  </header>
+
+  <nav id="difficulty">
+    <p>Select Difficulty:</p>
+    <button onclick="startGame('easy')">Easy</button>
+    <button onclick="startGame('normal')">Normal</button>
+    <button onclick="startGame('hard')">Hard</button>
+  </nav>
+
+  <main id="gameArea">
+    <!-- Drop and obstacle elements will be added dynamically -->
+  </main>
+
+  <nav id="controls">
+    <button id="resetBtn">Reset</button>
+  </nav>
+
+  <footer>
+    <p>Inspired by <a href="https://www.charitywater.org" target="_blank">charity: water</a>. 
+    <a href="https://www.charitywater.org/donate" target="_blank">Donate here</a>.</p>
+  </footer>
+
+  <!-- Celebration Canvas -->
+  <canvas id="celebration" class="hide"></canvas>
+
+  <!-- Sound (optional) -->
+  <audio id="collectSound" src="collect.mp3" preload="auto"></audio>
+
+  <!-- Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+  <audio id="collectSound" src="collect.mp3" preload="auto"></audio>
+</body>
+</html>
